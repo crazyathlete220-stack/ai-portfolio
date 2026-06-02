@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI事業開発者 ポートフォリオ</title>
+  <meta name="description" content="AIエージェントで事業の運用そのものを自動化・仕組み化する、AI事業開発者のポートフォリオ。" />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #1a1d24;
+      --text: #e8eaed;
+      --muted: #9aa0aa;
+      --accent: #6ea8fe;
+      --border: #2a2e37;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      background: var(--bg); color: var(--text);
+      line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 80px 24px 120px; }
+    .hero h1 { font-size: 2rem; letter-spacing: .02em; }
+    .hero p.lead { color: var(--muted); margin-top: 16px; font-size: 1.05rem; }
+    .tags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .tag {
+      border: 1px solid var(--border); color: var(--muted);
+      padding: 6px 14px; border-radius: 999px; font-size: .85rem;
+    }
+    h2 { font-size: 1.1rem; margin: 64px 0 20px; color: var(--accent); letter-spacing: .04em; }
+    .cases { display: grid; gap: 16px; }
+    a.case {
+      display: block; text-decoration: none; color: inherit;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 24px; transition: border-color .2s, transform .2s;
+    }
+    a.case:hover { border-color: var(--accent); transform: translateY(-2px); }
+    a.case h3 { font-size: 1.15rem; margin-bottom: 8px; }
+    a.case p { color: var(--muted); font-size: .95rem; }
+    .skills { display: grid; gap: 8px; color: var(--muted); font-size: .95rem; }
+    .skills strong { color: var(--text); }
+    footer { margin-top: 72px; padding-top: 28px; border-top: 1px solid var(--border); color: var(--muted); font-size: .85rem; }
+    .note { font-size: .8rem; color: var(--muted); margin-top: 16px; }
+    .cta {
+      display: inline-block; margin-top: 18px; text-decoration: none;
+      background: var(--accent); color: #0f1115; font-weight: 700;
+      padding: 12px 28px; border-radius: 999px; font-size: .95rem;
+      transition: opacity .2s;
+    }
+    .cta:hover { opacity: .85; }
+    .lang { text-align: right; margin-bottom: 8px; font-size: .85rem; }
+    .lang a { color: var(--muted); text-decoration: none; }
+    .lang a.active { color: var(--accent); font-weight: 700; }
+    .lang span { color: var(--border); margin: 0 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="lang"><a class="active" href="index.html">日本語</a><span>/</span><a href="index-en.html">English</a></nav>
+    <section class="hero">
+      <h1>AI事業開発者</h1>
+      <p class="lead">
+        AIエージェントを使って「事業の運用そのもの」を自動化・仕組み化します。
+        単発のツールづくりではなく、人手をかけずに事業が回り続ける体制を設計・実装するのが専門です。
+      </p>
+      <div class="tags">
+        <span class="tag">マルチエージェント設計</span>
+        <span class="tag">業務自動化</span>
+        <span class="tag">スケジューラ連携</span>
+        <span class="tag">API連携</span>
+        <span class="tag">Node.js / TypeScript</span>
+      </div>
+    </section>
+
+    <h2>CASE STUDIES</h2>
+    <div class="cases">
+      <a class="case" href="cases/case-multiagent-ops.md">
+        <h3>多エージェント運用チームの構築</h3>
+        <p>6名の役割特化AIエージェントが毎朝自動稼働し、事業運用を分担するチームを構築。</p>
+      </a>
+      <a class="case" href="cases/case-content-automation.md">
+        <h3>コンテンツ運用の自動化</h3>
+        <p>動画投稿・タイトル/概要欄の最適化・定型更新を、API連携でフル自動化。</p>
+      </a>
+    </div>
+
+    <h2>WHAT I DO</h2>
+    <div class="skills">
+      <div><strong>AIオーケストレーション</strong> — 役割別ペルソナ定義によるマルチエージェント協調</div>
+      <div><strong>無人運用</strong> — スケジューラ連携と証跡ベースの完了判定で「止まらない自動化」</div>
+      <div><strong>実装</strong> — Node.js / TypeScript / 各種Web API（OAuth含む）/ React・Vite</div>
+    </div>
+
+    <footer>
+      <p>AIを使った業務自動化・運用代行の仕組みづくりに関心がある方は、お気軽にご連絡ください。</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSe7SCOIQDNuP7wKmiKMP5dcqzEEzTXyiSNPdFfO6EJ1LN0TvA/viewform" target="_blank" rel="noopener">お問い合わせフォームへ</a>
+      <p class="note">※掲載内容はすべて実案件を匿名化したものです。実データ・認証情報・固有名は一切含みません。</p>
+    </footer>
+  </div>
+</body>
+</html>

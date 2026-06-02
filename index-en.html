@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Business Developer — Portfolio</title>
+  <meta name="description" content="Portfolio of an AI Business Developer who automates and systematizes business operations with AI agents." />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #1a1d24;
+      --text: #e8eaed;
+      --muted: #9aa0aa;
+      --accent: #6ea8fe;
+      --border: #2a2e37;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, "Segoe UI", "Noto Sans", sans-serif;
+      background: var(--bg); color: var(--text);
+      line-height: 1.7; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 80px 24px 120px; }
+    .hero h1 { font-size: 2rem; letter-spacing: .02em; }
+    .hero p.lead { color: var(--muted); margin-top: 16px; font-size: 1.05rem; }
+    .tags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .tag {
+      border: 1px solid var(--border); color: var(--muted);
+      padding: 6px 14px; border-radius: 999px; font-size: .85rem;
+    }
+    h2 { font-size: 1.1rem; margin: 64px 0 20px; color: var(--accent); letter-spacing: .04em; }
+    .cases { display: grid; gap: 16px; }
+    a.case {
+      display: block; text-decoration: none; color: inherit;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 24px; transition: border-color .2s, transform .2s;
+    }
+    a.case:hover { border-color: var(--accent); transform: translateY(-2px); }
+    a.case h3 { font-size: 1.15rem; margin-bottom: 8px; }
+    a.case p { color: var(--muted); font-size: .95rem; }
+    .skills { display: grid; gap: 8px; color: var(--muted); font-size: .95rem; }
+    .skills strong { color: var(--text); }
+    footer { margin-top: 72px; padding-top: 28px; border-top: 1px solid var(--border); color: var(--muted); font-size: .85rem; }
+    .note { font-size: .8rem; color: var(--muted); margin-top: 16px; }
+    .cta {
+      display: inline-block; margin-top: 18px; text-decoration: none;
+      background: var(--accent); color: #0f1115; font-weight: 700;
+      padding: 12px 28px; border-radius: 999px; font-size: .95rem;
+      transition: opacity .2s;
+    }
+    .cta:hover { opacity: .85; }
+    .lang { text-align: right; margin-bottom: 8px; font-size: .85rem; }
+    .lang a { color: var(--muted); text-decoration: none; }
+    .lang a.active { color: var(--accent); font-weight: 700; }
+    .lang span { color: var(--border); margin: 0 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="lang"><a href="index.html">日本語</a><span>/</span><a class="active" href="index-en.html">English</a></nav>
+    <section class="hero">
+      <h1>AI Business Developer</h1>
+      <p class="lead">
+        I use AI agents to automate and systematize business operations themselves.
+        Rather than building one-off tools, I design and implement systems where a business
+        keeps running with minimal human effort.
+      </p>
+      <div class="tags">
+        <span class="tag">Multi-agent design</span>
+        <span class="tag">Business automation</span>
+        <span class="tag">Scheduled operations</span>
+        <span class="tag">API integration</span>
+        <span class="tag">Node.js / TypeScript</span>
+      </div>
+    </section>
+
+    <h2>CASE STUDIES</h2>
+    <div class="cases">
+      <a class="case" href="cases/case-multiagent-ops-en.md">
+        <h3>Building a Multi-Agent Operations Team</h3>
+        <p>Six role-specialized AI agents run automatically every morning, sharing the work of running a business.</p>
+      </a>
+      <a class="case" href="cases/case-content-automation-en.md">
+        <h3>Content Operations Automation</h3>
+        <p>Video publishing, title/description optimization, and routine updates — fully automated via API integration.</p>
+      </a>
+    </div>
+
+    <h2>WHAT I DO</h2>
+    <div class="skills">
+      <div><strong>AI orchestration</strong> — multi-agent collaboration through role-based persona definitions</div>
+      <div><strong>Unattended operations</strong> — scheduled execution and evidence-based completion checks for automation that doesn't stall</div>
+      <div><strong>Implementation</strong> — Node.js / TypeScript / various web APIs (incl. OAuth) / React & Vite</div>
+    </div>
+
+    <footer>
+      <p>If you're interested in building AI-powered business automation or managed operations, feel free to reach out.</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfczpnGgaKu48cjNpMeTFLr6glsNDjFlpNRkIXF-QaXzwIYWQ/viewform" target="_blank" rel="noopener">Contact form</a>
+      <p class="note">* All content is anonymized from real projects. No real data, credentials, or identifying names are included.</p>
+    </footer>
+  </div>
+</body>
+</html>
